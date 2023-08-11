@@ -13,6 +13,12 @@
 		F8FE7D052A868C8400D3E5CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FE7D032A868C8400D3E5CE /* Main.storyboard */; };
 		F8FE7D072A868C8500D3E5CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FE7D062A868C8500D3E5CE /* Assets.xcassets */; };
 		F8FE7D0A2A868C8500D3E5CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FE7D082A868C8500D3E5CE /* LaunchScreen.storyboard */; };
+		F8FE7D142A86915B00D3E5CE /* DoorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D132A86915B00D3E5CE /* DoorModel.swift */; };
+		F8FE7D162A86917900D3E5CE /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D152A86917900D3E5CE /* CameraModel.swift */; };
+		F8FE7D182A86943D00D3E5CE /* APIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D172A86943D00D3E5CE /* APIURL.swift */; };
+		F8FE7D1A2A86969000D3E5CE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D192A86969000D3E5CE /* NetworkService.swift */; };
+		F8FE7D1C2A8696B500D3E5CE /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D1B2A8696B500D3E5CE /* DataFetcherService.swift */; };
+		F8FE7D1E2A86975200D3E5CE /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D1D2A86975200D3E5CE /* NetworkDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		F8FE7D062A868C8500D3E5CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8FE7D092A868C8500D3E5CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8FE7D0B2A868C8500D3E5CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8FE7D132A86915B00D3E5CE /* DoorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorModel.swift; sourceTree = "<group>"; };
+		F8FE7D152A86917900D3E5CE /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		F8FE7D172A86943D00D3E5CE /* APIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURL.swift; sourceTree = "<group>"; };
+		F8FE7D192A86969000D3E5CE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = Model/NetworkService.swift; sourceTree = "<group>"; };
+		F8FE7D1B2A8696B500D3E5CE /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
+		F8FE7D1D2A86975200D3E5CE /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 		F8FE7CFC2A868C8400D3E5CE /* MyHouse */ = {
 			isa = PBXGroup;
 			children = (
+				F8FE7D112A86912700D3E5CE /* NetworkService */,
 				F8FE7CFD2A868C8400D3E5CE /* AppDelegate.swift */,
 				F8FE7CFF2A868C8400D3E5CE /* SceneDelegate.swift */,
 				F8FE7D012A868C8400D3E5CE /* ViewController.swift */,
@@ -65,6 +78,27 @@
 				F8FE7D0B2A868C8500D3E5CE /* Info.plist */,
 			);
 			path = MyHouse;
+			sourceTree = "<group>";
+		};
+		F8FE7D112A86912700D3E5CE /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D122A86912F00D3E5CE /* Model */,
+				F8FE7D172A86943D00D3E5CE /* APIURL.swift */,
+				F8FE7D1B2A8696B500D3E5CE /* DataFetcherService.swift */,
+				F8FE7D1D2A86975200D3E5CE /* NetworkDataFetcher.swift */,
+				F8FE7D192A86969000D3E5CE /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		F8FE7D122A86912F00D3E5CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D132A86915B00D3E5CE /* DoorModel.swift */,
+				F8FE7D152A86917900D3E5CE /* CameraModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +174,13 @@
 			files = (
 				F8FE7D022A868C8400D3E5CE /* ViewController.swift in Sources */,
 				F8FE7CFE2A868C8400D3E5CE /* AppDelegate.swift in Sources */,
+				F8FE7D182A86943D00D3E5CE /* APIURL.swift in Sources */,
+				F8FE7D162A86917900D3E5CE /* CameraModel.swift in Sources */,
 				F8FE7D002A868C8400D3E5CE /* SceneDelegate.swift in Sources */,
+				F8FE7D142A86915B00D3E5CE /* DoorModel.swift in Sources */,
+				F8FE7D1E2A86975200D3E5CE /* NetworkDataFetcher.swift in Sources */,
+				F8FE7D1A2A86969000D3E5CE /* NetworkService.swift in Sources */,
+				F8FE7D1C2A8696B500D3E5CE /* DataFetcherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +335,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
