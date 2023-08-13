@@ -20,6 +20,7 @@ final class DoorsCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         fetchData()
         view.backgroundColor = .systemGray6
+        collectionView.collectionViewLayout = createLayout()
     }
     
     // MARK: - Private methods
@@ -30,15 +31,41 @@ final class DoorsCollectionViewController: UICollectionViewController {
             collectionView.reloadData()
         }
     }
+    
+    private func createLayout() -> UICollectionViewCompositionalLayout {
+        var configuration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+        configuration.trailingSwipeActionsConfigurationProvider = { [weak self] indexPath in
+            guard self == self else {
+                return UISwipeActionsConfiguration()
+            }
+            
+            let editAction = UIContextualAction(style: .normal, title: "") { action, view, completion in
+                completion(true)
+            }
+            editAction.image = UIImage(named: "Pencil")
+            editAction.backgroundColor = .systemGray6
+            
+            let favoriteAction = UIContextualAction(style: .normal, title: "") { action, view, completion in
+                completion(true)
+            }
+            favoriteAction.image = UIImage(named: "Favorite")
+            favoriteAction.backgroundColor = .systemGray6
+            
+            return UISwipeActionsConfiguration(actions: [favoriteAction, editAction])
+        }
+        return UICollectionViewCompositionalLayout.list(using: configuration)
+    }
+}
 
     // MARK: - UICollectionDataSource
+extension DoorsCollectionViewController {
     override func collectionView(
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
     ) -> Int {
         return door?.data.count ?? 0
     }
-
+    
     override func collectionView(
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
@@ -51,15 +78,17 @@ final class DoorsCollectionViewController: UICollectionViewController {
         cell.configure(with: door)
         return cell
     }
-    
+}
+
     // MARK: - UICollectionViewDelegate
+extension DoorsCollectionViewController {
     override func collectionView(
         _ collectionView: UICollectionView,
         didSelectItemAt indexPath: IndexPath) {
-        collectionView.deselectItem(at: indexPath, animated: true)
-        let door = door?.data[indexPath.item]
-        delegate?.segueToNext(identifier: "detailSegue", sender: door)
-    }
+            collectionView.deselectItem(at: indexPath, animated: true)
+            let door = door?.data[indexPath.item]
+            delegate?.segueToNext(identifier: "detailSegue", sender: door)
+        }
 }
 
     // MARK: - UICollectionViewDelegateFlowLayout
