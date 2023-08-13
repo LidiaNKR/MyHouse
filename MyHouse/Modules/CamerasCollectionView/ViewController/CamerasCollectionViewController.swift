@@ -17,6 +17,7 @@ final class CamerasCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
+        collectionView.collectionViewLayout = createLayout()
     }
     
     // MARK: - Private methods
@@ -26,6 +27,37 @@ final class CamerasCollectionViewController: UICollectionViewController {
             self.cameras = cameras
             collectionView.reloadData()
         }
+    }
+    
+    private func createLayout() -> UICollectionViewCompositionalLayout {
+        var configuration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+        configuration.trailingSwipeActionsConfigurationProvider = { [weak self] indexPath in
+            guard self == self else {
+                return UISwipeActionsConfiguration()
+            }
+            
+            let favoriteAction = UIContextualAction(style: .normal, title: "") { action, view, completion in
+                self?.handleSwipe(for: action)
+                completion(true)
+            }
+            favoriteAction.image = UIImage(named: "Favorite")
+            favoriteAction.backgroundColor = .clear
+            favoriteAction.backgroundColor = .systemGray6
+            
+            return UISwipeActionsConfiguration(actions: [favoriteAction])
+        }
+        return UICollectionViewCompositionalLayout.list(using: configuration)
+    }
+    
+    private func handleSwipe(for action: UIContextualAction) {
+        let alert = UIAlertController(title: "Камера \(String(describing: "")) добавлена в избранное",
+                                      message: "",
+                                      preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title:"OK", style: .default, handler: { (_) in })
+        alert.addAction(okAction)
+        
+        present(alert, animated: true, completion:nil)
     }
 }
 
