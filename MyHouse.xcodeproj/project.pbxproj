@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C78167C200DFB90E8476C5C7 /* Pods_MyHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F715808F9E870DF7060945 /* Pods_MyHouse.framework */; };
 		F86E6C092A882A4E005C8D8B /* CurrentScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E6C082A882A4E005C8D8B /* CurrentScreenModel.swift */; };
 		F86E6C0C2A883851005C8D8B /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E6C0B2A883851005C8D8B /* BottomSheetViewController.swift */; };
 		F86E6C0E2A8839CB005C8D8B /* DoorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E6C0D2A8839CB005C8D8B /* DoorCollectionViewCell.swift */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82F715808F9E870DF7060945 /* Pods_MyHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE24462843841AB925A0A4A /* Pods-MyHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHouse.debug.xcconfig"; path = "Target Support Files/Pods-MyHouse/Pods-MyHouse.debug.xcconfig"; sourceTree = "<group>"; };
 		F86E6C082A882A4E005C8D8B /* CurrentScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentScreenModel.swift; sourceTree = "<group>"; };
 		F86E6C0B2A883851005C8D8B /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		F86E6C0D2A8839CB005C8D8B /* DoorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		F8FE7D242A86B00000D3E5CE /* CamerasCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamerasCollectionViewController.swift; sourceTree = "<group>"; };
 		F8FE7D262A86B01600D3E5CE /* DoorsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsCollectionViewController.swift; sourceTree = "<group>"; };
 		F8FE7D282A86BDA300D3E5CE /* CameraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF3C028C5242F2CEFCF4E868 /* Pods-MyHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHouse.release.xcconfig"; path = "Target Support Files/Pods-MyHouse/Pods-MyHouse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +65,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C78167C200DFB90E8476C5C7 /* Pods_MyHouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		589A4E37B10BA1822386FC68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BE24462843841AB925A0A4A /* Pods-MyHouse.debug.xcconfig */,
+				FF3C028C5242F2CEFCF4E868 /* Pods-MyHouse.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EBD886BED27E5CCBDE329A6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82F715808F9E870DF7060945 /* Pods_MyHouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F86E6C072A882A16005C8D8B /* ContainerViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +259,8 @@
 			children = (
 				F8FE7CFC2A868C8400D3E5CE /* MyHouse */,
 				F8FE7CFB2A868C8400D3E5CE /* Products */,
+				589A4E37B10BA1822386FC68 /* Pods */,
+				EBD886BED27E5CCBDE329A6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8FE7D0E2A868C8500D3E5CE /* Build configuration list for PBXNativeTarget "MyHouse" */;
 			buildPhases = (
+				F9738C8997BFDDA34148563C /* [CP] Check Pods Manifest.lock */,
 				F8FE7CF62A868C8400D3E5CE /* Sources */,
 				F8FE7CF72A868C8400D3E5CE /* Frameworks */,
 				F8FE7CF82A868C8400D3E5CE /* Resources */,
+				DED8F5594BA3D28980B22880 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,6 +372,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DED8F5594BA3D28980B22880 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyHouse/Pods-MyHouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyHouse/Pods-MyHouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyHouse/Pods-MyHouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9738C8997BFDDA34148563C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyHouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8FE7CF62A868C8400D3E5CE /* Sources */ = {
@@ -510,6 +579,7 @@
 		};
 		F8FE7D0F2A868C8500D3E5CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE24462843841AB925A0A4A /* Pods-MyHouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -539,6 +609,7 @@
 		};
 		F8FE7D102A868C8500D3E5CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF3C028C5242F2CEFCF4E868 /* Pods-MyHouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
