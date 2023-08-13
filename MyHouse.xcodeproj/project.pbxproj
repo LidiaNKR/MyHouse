@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F86E6C092A882A4E005C8D8B /* CurrentScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E6C082A882A4E005C8D8B /* CurrentScreenModel.swift */; };
+		F86E6C0C2A883851005C8D8B /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E6C0B2A883851005C8D8B /* BottomSheetViewController.swift */; };
+		F86E6C0E2A8839CB005C8D8B /* DoorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E6C0D2A8839CB005C8D8B /* DoorCollectionViewCell.swift */; };
+		F8782E962A87D65B00CFF201 /* ImageNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8782E952A87D65B00CFF201 /* ImageNetworkService.swift */; };
+		F8782E982A87D6A900CFF201 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8782E972A87D6A900CFF201 /* NetworkImageView.swift */; };
 		F8FE7CFE2A868C8400D3E5CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7CFD2A868C8400D3E5CE /* AppDelegate.swift */; };
 		F8FE7D002A868C8400D3E5CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7CFF2A868C8400D3E5CE /* SceneDelegate.swift */; };
 		F8FE7D022A868C8400D3E5CE /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D012A868C8400D3E5CE /* DescriptionViewController.swift */; };
@@ -19,13 +24,18 @@
 		F8FE7D1A2A86969000D3E5CE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D192A86969000D3E5CE /* NetworkService.swift */; };
 		F8FE7D1C2A8696B500D3E5CE /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D1B2A8696B500D3E5CE /* DataFetcherService.swift */; };
 		F8FE7D1E2A86975200D3E5CE /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D1D2A86975200D3E5CE /* NetworkDataFetcher.swift */; };
-		F8FE7D232A86A95800D3E5CE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D222A86A95800D3E5CE /* TabBarViewController.swift */; };
+		F8FE7D232A86A95800D3E5CE /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D222A86A95800D3E5CE /* ContainerViewController.swift */; };
 		F8FE7D252A86B00000D3E5CE /* CamerasCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D242A86B00000D3E5CE /* CamerasCollectionViewController.swift */; };
 		F8FE7D272A86B01600D3E5CE /* DoorsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D262A86B01600D3E5CE /* DoorsCollectionViewController.swift */; };
 		F8FE7D292A86BDA300D3E5CE /* CameraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D282A86BDA300D3E5CE /* CameraCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F86E6C082A882A4E005C8D8B /* CurrentScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentScreenModel.swift; sourceTree = "<group>"; };
+		F86E6C0B2A883851005C8D8B /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		F86E6C0D2A8839CB005C8D8B /* DoorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8782E952A87D65B00CFF201 /* ImageNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkService.swift; sourceTree = "<group>"; };
+		F8782E972A87D6A900CFF201 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
 		F8FE7CFA2A868C8400D3E5CE /* MyHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FE7CFD2A868C8400D3E5CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8FE7CFF2A868C8400D3E5CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +50,7 @@
 		F8FE7D192A86969000D3E5CE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = Model/NetworkService.swift; sourceTree = "<group>"; };
 		F8FE7D1B2A8696B500D3E5CE /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
 		F8FE7D1D2A86975200D3E5CE /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
-		F8FE7D222A86A95800D3E5CE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F8FE7D222A86A95800D3E5CE /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		F8FE7D242A86B00000D3E5CE /* CamerasCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamerasCollectionViewController.swift; sourceTree = "<group>"; };
 		F8FE7D262A86B01600D3E5CE /* DoorsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsCollectionViewController.swift; sourceTree = "<group>"; };
 		F8FE7D282A86BDA300D3E5CE /* CameraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -57,6 +67,170 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F86E6C072A882A16005C8D8B /* ContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F8D72B6D2A8938D8003A7720 /* Model */,
+				F8D72B6E2A8938E0003A7720 /* ViewController */,
+			);
+			path = ContainerViewController;
+			sourceTree = "<group>";
+		};
+		F86E6C0A2A88383A005C8D8B /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				F8D72B6F2A8938F1003A7720 /* ViewController */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		F87BA1682A878CE200279413 /* CamerasCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F8D72B6A2A8938A3003A7720 /* Model */,
+				F8D72B6B2A8938AD003A7720 /* View */,
+				F8D72B6C2A8938B9003A7720 /* ViewController */,
+			);
+			path = CamerasCollectionView;
+			sourceTree = "<group>";
+		};
+		F8D72B6A2A8938A3003A7720 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D152A86917900D3E5CE /* CameraModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8D72B6B2A8938AD003A7720 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D282A86BDA300D3E5CE /* CameraCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8D72B6C2A8938B9003A7720 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D242A86B00000D3E5CE /* CamerasCollectionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F8D72B6D2A8938D8003A7720 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F86E6C082A882A4E005C8D8B /* CurrentScreenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8D72B6E2A8938E0003A7720 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D222A86A95800D3E5CE /* ContainerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F8D72B6F2A8938F1003A7720 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F86E6C0B2A883851005C8D8B /* BottomSheetViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F8D72B702A893900003A7720 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D132A86915B00D3E5CE /* DoorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8D72B712A893912003A7720 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F86E6C0D2A8839CB005C8D8B /* DoorCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8D72B722A89391B003A7720 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D262A86B01600D3E5CE /* DoorsCollectionViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		F8D72B732A893944003A7720 /* DescriptionView */ = {
+			isa = PBXGroup;
+			children = (
+				F8D72B742A893949003A7720 /* ViewController */,
+			);
+			path = DescriptionView;
+			sourceTree = "<group>";
+		};
+		F8D72B742A893949003A7720 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D012A868C8400D3E5CE /* DescriptionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F8D72B752A8939A6003A7720 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7CFD2A868C8400D3E5CE /* AppDelegate.swift */,
+				F8FE7CFF2A868C8400D3E5CE /* SceneDelegate.swift */,
+				F8FE7D062A868C8500D3E5CE /* Assets.xcassets */,
+				F8FE7D0B2A868C8500D3E5CE /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		F8D72B762A8939D5003A7720 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F8D72B792A893B5B003A7720 /* Extentions */,
+				F86E6C072A882A16005C8D8B /* ContainerViewController */,
+				F87BA1682A878CE200279413 /* CamerasCollectionView */,
+				F8FE7D212A86A8E000D3E5CE /* DoorsCollectionView */,
+				F8D72B732A893944003A7720 /* DescriptionView */,
+				F86E6C0A2A88383A005C8D8B /* BottomSheet */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F8D72B772A893A45003A7720 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D032A868C8400D3E5CE /* Main.storyboard */,
+				F8FE7D082A868C8500D3E5CE /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8D72B782A893AA2003A7720 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F8FE7D112A86912700D3E5CE /* NetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F8D72B792A893B5B003A7720 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				F8782E972A87D6A900CFF201 /* NetworkImageView.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 		F8FE7CF12A868C8400D3E5CE = {
 			isa = PBXGroup;
 			children = (
@@ -76,14 +250,10 @@
 		F8FE7CFC2A868C8400D3E5CE /* MyHouse */ = {
 			isa = PBXGroup;
 			children = (
-				F8FE7D212A86A8E000D3E5CE /* ViewController */,
-				F8FE7D112A86912700D3E5CE /* NetworkService */,
-				F8FE7CFD2A868C8400D3E5CE /* AppDelegate.swift */,
-				F8FE7CFF2A868C8400D3E5CE /* SceneDelegate.swift */,
-				F8FE7D032A868C8400D3E5CE /* Main.storyboard */,
-				F8FE7D062A868C8500D3E5CE /* Assets.xcassets */,
-				F8FE7D082A868C8500D3E5CE /* LaunchScreen.storyboard */,
-				F8FE7D0B2A868C8500D3E5CE /* Info.plist */,
+				F8D72B772A893A45003A7720 /* View */,
+				F8D72B762A8939D5003A7720 /* Modules */,
+				F8D72B782A893AA2003A7720 /* Services */,
+				F8D72B752A8939A6003A7720 /* Supporting files */,
 			);
 			path = MyHouse;
 			sourceTree = "<group>";
@@ -91,34 +261,23 @@
 		F8FE7D112A86912700D3E5CE /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				F8FE7D122A86912F00D3E5CE /* Model */,
 				F8FE7D172A86943D00D3E5CE /* APIURL.swift */,
 				F8FE7D1B2A8696B500D3E5CE /* DataFetcherService.swift */,
 				F8FE7D1D2A86975200D3E5CE /* NetworkDataFetcher.swift */,
 				F8FE7D192A86969000D3E5CE /* NetworkService.swift */,
+				F8782E952A87D65B00CFF201 /* ImageNetworkService.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
 		};
-		F8FE7D122A86912F00D3E5CE /* Model */ = {
+		F8FE7D212A86A8E000D3E5CE /* DoorsCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				F8FE7D132A86915B00D3E5CE /* DoorModel.swift */,
-				F8FE7D152A86917900D3E5CE /* CameraModel.swift */,
+				F8D72B702A893900003A7720 /* Model */,
+				F8D72B712A893912003A7720 /* View */,
+				F8D72B722A89391B003A7720 /* ViewController */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F8FE7D212A86A8E000D3E5CE /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				F8FE7D012A868C8400D3E5CE /* DescriptionViewController.swift */,
-				F8FE7D222A86A95800D3E5CE /* TabBarViewController.swift */,
-				F8FE7D242A86B00000D3E5CE /* CamerasCollectionViewController.swift */,
-				F8FE7D282A86BDA300D3E5CE /* CameraCollectionViewCell.swift */,
-				F8FE7D262A86B01600D3E5CE /* DoorsCollectionViewController.swift */,
-			);
-			path = ViewController;
+			path = DoorsCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,18 +351,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8782E962A87D65B00CFF201 /* ImageNetworkService.swift in Sources */,
+				F8782E982A87D6A900CFF201 /* NetworkImageView.swift in Sources */,
 				F8FE7D022A868C8400D3E5CE /* DescriptionViewController.swift in Sources */,
 				F8FE7D292A86BDA300D3E5CE /* CameraCollectionViewCell.swift in Sources */,
 				F8FE7D252A86B00000D3E5CE /* CamerasCollectionViewController.swift in Sources */,
 				F8FE7CFE2A868C8400D3E5CE /* AppDelegate.swift in Sources */,
 				F8FE7D182A86943D00D3E5CE /* APIURL.swift in Sources */,
+				F86E6C092A882A4E005C8D8B /* CurrentScreenModel.swift in Sources */,
 				F8FE7D272A86B01600D3E5CE /* DoorsCollectionViewController.swift in Sources */,
 				F8FE7D162A86917900D3E5CE /* CameraModel.swift in Sources */,
+				F86E6C0E2A8839CB005C8D8B /* DoorCollectionViewCell.swift in Sources */,
 				F8FE7D002A868C8400D3E5CE /* SceneDelegate.swift in Sources */,
 				F8FE7D142A86915B00D3E5CE /* DoorModel.swift in Sources */,
+				F86E6C0C2A883851005C8D8B /* BottomSheetViewController.swift in Sources */,
 				F8FE7D1E2A86975200D3E5CE /* NetworkDataFetcher.swift in Sources */,
 				F8FE7D1A2A86969000D3E5CE /* NetworkService.swift in Sources */,
-				F8FE7D232A86A95800D3E5CE /* TabBarViewController.swift in Sources */,
+				F8FE7D232A86A95800D3E5CE /* ContainerViewController.swift in Sources */,
 				F8FE7D1C2A8696B500D3E5CE /* DataFetcherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +517,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69V683996A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyHouse/Info.plist;
+				INFOPLIST_FILE = "MyHouse/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -382,7 +546,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69V683996A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyHouse/Info.plist;
+				INFOPLIST_FILE = "MyHouse/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
