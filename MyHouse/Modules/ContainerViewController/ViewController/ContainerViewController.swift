@@ -89,7 +89,7 @@ final class ContainerViewController: UIViewController, SegueHandler {
     // MARK: - Puplic methods
     func segueToNext(identifier: String, sender: Any?) {
         self.performSegue(withIdentifier: identifier, sender: sender)
-        }
+    }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
