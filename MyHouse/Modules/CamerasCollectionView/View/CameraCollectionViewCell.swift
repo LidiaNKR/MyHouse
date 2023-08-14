@@ -21,17 +21,18 @@ final class CameraCollectionViewCell: UICollectionViewCell, CameraCollectionView
     
     // MARK: - IBOutlets
     @IBOutlet weak var cameraLabel: UILabel!
-    @IBOutlet weak var favoriteImage: UIImageView!
-    @IBOutlet weak var cameraImage: NetworkImageView!
-    @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var guardImage: UIImageView!
-
+    @IBOutlet weak var cameraImageView: NetworkImageView!
+    @IBOutlet weak var favoriteImageView: UIImageView!
+    @IBOutlet weak var recImageView: UIImageView!
+    @IBOutlet weak var guardImageView: UIImageView!
+    
     // MARK: - Public methods
     func configure(with camera: Camera) {
         layer.cornerRadius = 20
         backgroundColor = .white
         cameraLabel.text = camera.name
-        cameraImage.fetchImage(from: camera.snapshot)
-        playButton.imageView?.image = #imageLiteral(resourceName: "Play")
+        cameraImageView.fetchImage(from: camera.snapshot)
+        favoriteImageView.setVisible(for: favoriteImageView, value: camera.favorites)
+        recImageView.setVisible(for: recImageView, value: camera.rec)
     }
 }

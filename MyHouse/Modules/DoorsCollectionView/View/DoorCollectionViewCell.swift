@@ -1,15 +1,15 @@
 //
-//  DoorsCollectionViewCell.swift
+//  DoorCollectionViewCell.swift
 //  MyHouse
 //
-//  Created by Лидия Некрасова on 13.08.2023.
+//  Created by Лидия Некрасова on 14.08.2023.
 //
 
 import UIKit
 
 protocol DoorCollectionViewCellProtocol {
-    ///Идентификатор ячейки двери
-//    static var identifier: String { get }
+    ///Дверь открыта? - Да/Нет
+    var doorIsLook: Bool { get }
     
     ///Конфигурация ячейки коллекции
     /// - Parameters:
@@ -18,23 +18,18 @@ protocol DoorCollectionViewCellProtocol {
 }
 
 final class DoorCollectionViewCell: UICollectionViewCell, DoorCollectionViewCellProtocol {
-    
     // MARK: - Public properties
     static let identifier = "doorCell"
+    var doorIsLook: Bool = true
     
     // MARK: - IBOutlets
-    @IBOutlet weak var cameraImage: NetworkImageView!
-    @IBOutlet weak var doorTextField: UITextField!
-    @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var lockImage: UIImageView!
-
+    @IBOutlet weak var lockImageView: UIImageView!
+    @IBOutlet weak var doorLabel: UILabel!
+    
     // MARK: - Public methods
     func configure(with door: Door) {
         layer.cornerRadius = 20
-        backgroundColor = .white
-        cameraImage.fetchImage(from: door.snapshot)
-        doorTextField.text = door.name
-        playButton.imageView?.image = #imageLiteral(resourceName: "Play")
-        lockImage.image = #imageLiteral(resourceName: "Key")
+        doorLabel.text = door.name
+        doorIsLook ? (lockImageView.image = #imageLiteral(resourceName: "Lock")) : (lockImageView.image = #imageLiteral(resourceName: "Unlock"))
     }
 }
