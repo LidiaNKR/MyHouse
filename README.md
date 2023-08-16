@@ -10,16 +10,30 @@
 Основные классы:
 
 1. ContainerViewController, который представляет TableViewController, в зависимости от выбранной вкладки.
-![product-screenshot](Images/Camera.png) ![product-screenshot](Gifs/Door.png)
+
+<p align="center" width="100%">
+    <img width="30%" src="https://github.com/LidiaNKR/MyHouse/blob/b1c5ee600a3ea62eba2f558d087c437cb4f2193a/Images/Camera.png">
+    <img width="30%" src="https://github.com/LidiaNKR/MyHouse/blob/b1c5ee600a3ea62eba2f558d087c437cb4f2193a/Images/Door.png">
+</p>
 
 2. CamerasTableViewController, отображающий камеры в доме. Если данных в базе Realm нет, то данные грузятся из сети и сохраняются в Realm. При свейпе экран вниз происходит загрузка и обновление данных из сети. Имеет функционал добавления/удаления камеры в избранное. 
-![product-screenshot](Images/CameraEdit.png)
+
+<p align="center" width="100%">
+    <img width="30%" src="https://github.com/LidiaNKR/MyHouse/blob/b1c5ee600a3ea62eba2f558d087c437cb4f2193a/Images/CameraEdit.png">
+</p>
 
 3. DoorsTableViewController, отображающий камеры у дверей. Если данных в базе Realm нет, то данные грузятся из сети и сохраняются в Realm. При свейпе экран вниз происходит загрузка и обновление данных из сети. Имеет функционал добавления/удаления камеры в избранное и редактирования названия камеры.
-![product-screenshot](Images/DoorEdit.png) ![product-screenshot](Images/DoorNameEdit.png)
+
+<p align="center" width="100%">
+    <img width="30%" src="https://github.com/LidiaNKR/MyHouse/blob/b1c5ee600a3ea62eba2f558d087c437cb4f2193a/Images/DoorEdit.png">
+    <img width="30%" src="https://github.com/LidiaNKR/MyHouse/blob/b1c5ee600a3ea62eba2f558d087c437cb4f2193a/Images/DoorNameEdit.png">
+</p>
 
 4. DescriptionViewController, отображает информацию о камере у двери.
-![product-screenshot](Images/DoorDescription.png)
+
+<p align="center" width="100%">
+    <img width="30%" src="https://github.com/LidiaNKR/MyHouse/blob/b1c5ee600a3ea62eba2f558d087c437cb4f2193a/Images/DoorDescription.png">
+</p>
 
 # Дополнение к установка проекта
 1. Установить [CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
