@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C78167C200DFB90E8476C5C7 /* Pods_MyHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F715808F9E870DF7060945 /* Pods_MyHouse.framework */; };
-		F807AEA52A8AC998000C34B6 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807AEA42A8AC998000C34B6 /* SectionHeader.swift */; };
 		F8216CCB2A8AA017003DB83B /* VisibilityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8216CCA2A8AA017003DB83B /* VisibilityImageView.swift */; };
 		F86E6C092A882A4E005C8D8B /* CurrentScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E6C082A882A4E005C8D8B /* CurrentScreenModel.swift */; };
-		F86E6C0C2A883851005C8D8B /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E6C0B2A883851005C8D8B /* BottomSheetViewController.swift */; };
-		F86E6C0E2A8839CB005C8D8B /* IntercomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E6C0D2A8839CB005C8D8B /* IntercomCollectionViewCell.swift */; };
+		F86E6C0E2A8839CB005C8D8B /* IntercomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E6C0D2A8839CB005C8D8B /* IntercomTableViewCell.swift */; };
 		F8782E962A87D65B00CFF201 /* ImageNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8782E952A87D65B00CFF201 /* ImageNetworkService.swift */; };
 		F8782E982A87D6A900CFF201 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8782E972A87D6A900CFF201 /* NetworkImageView.swift */; };
 		F88091582A8A2EBD00860DC2 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88091572A8A2EBD00860DC2 /* StorageManager.swift */; };
-		F880915A2A8A667500860DC2 /* DoorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88091592A8A667500860DC2 /* DoorCollectionViewCell.swift */; };
+		F880915A2A8A667500860DC2 /* DoorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88091592A8A667500860DC2 /* DoorTableViewCell.swift */; };
 		F8FE7CFE2A868C8400D3E5CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7CFD2A868C8400D3E5CE /* AppDelegate.swift */; };
 		F8FE7D002A868C8400D3E5CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7CFF2A868C8400D3E5CE /* SceneDelegate.swift */; };
 		F8FE7D022A868C8400D3E5CE /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D012A868C8400D3E5CE /* DescriptionViewController.swift */; };
@@ -30,23 +28,21 @@
 		F8FE7D1C2A8696B500D3E5CE /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D1B2A8696B500D3E5CE /* DataFetcherService.swift */; };
 		F8FE7D1E2A86975200D3E5CE /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D1D2A86975200D3E5CE /* NetworkDataFetcher.swift */; };
 		F8FE7D232A86A95800D3E5CE /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D222A86A95800D3E5CE /* ContainerViewController.swift */; };
-		F8FE7D252A86B00000D3E5CE /* CamerasCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D242A86B00000D3E5CE /* CamerasCollectionViewController.swift */; };
-		F8FE7D272A86B01600D3E5CE /* DoorsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D262A86B01600D3E5CE /* DoorsCollectionViewController.swift */; };
-		F8FE7D292A86BDA300D3E5CE /* CameraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D282A86BDA300D3E5CE /* CameraCollectionViewCell.swift */; };
+		F8FE7D252A86B00000D3E5CE /* CamerasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D242A86B00000D3E5CE /* CamerasTableViewController.swift */; };
+		F8FE7D272A86B01600D3E5CE /* DoorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D262A86B01600D3E5CE /* DoorsTableViewController.swift */; };
+		F8FE7D292A86BDA300D3E5CE /* CameraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE7D282A86BDA300D3E5CE /* CameraTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82F715808F9E870DF7060945 /* Pods_MyHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE24462843841AB925A0A4A /* Pods-MyHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHouse.debug.xcconfig"; path = "Target Support Files/Pods-MyHouse/Pods-MyHouse.debug.xcconfig"; sourceTree = "<group>"; };
-		F807AEA42A8AC998000C34B6 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		F8216CCA2A8AA017003DB83B /* VisibilityImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityImageView.swift; sourceTree = "<group>"; };
 		F86E6C082A882A4E005C8D8B /* CurrentScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentScreenModel.swift; sourceTree = "<group>"; };
-		F86E6C0B2A883851005C8D8B /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
-		F86E6C0D2A8839CB005C8D8B /* IntercomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercomCollectionViewCell.swift; sourceTree = "<group>"; };
+		F86E6C0D2A8839CB005C8D8B /* IntercomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercomTableViewCell.swift; sourceTree = "<group>"; };
 		F8782E952A87D65B00CFF201 /* ImageNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkService.swift; sourceTree = "<group>"; };
 		F8782E972A87D6A900CFF201 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
 		F88091572A8A2EBD00860DC2 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		F88091592A8A667500860DC2 /* DoorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorCollectionViewCell.swift; sourceTree = "<group>"; };
+		F88091592A8A667500860DC2 /* DoorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorTableViewCell.swift; sourceTree = "<group>"; };
 		F8FE7CFA2A868C8400D3E5CE /* MyHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FE7CFD2A868C8400D3E5CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8FE7CFF2A868C8400D3E5CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,9 +58,9 @@
 		F8FE7D1B2A8696B500D3E5CE /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
 		F8FE7D1D2A86975200D3E5CE /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		F8FE7D222A86A95800D3E5CE /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		F8FE7D242A86B00000D3E5CE /* CamerasCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamerasCollectionViewController.swift; sourceTree = "<group>"; };
-		F8FE7D262A86B01600D3E5CE /* DoorsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsCollectionViewController.swift; sourceTree = "<group>"; };
-		F8FE7D282A86BDA300D3E5CE /* CameraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8FE7D242A86B00000D3E5CE /* CamerasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamerasTableViewController.swift; sourceTree = "<group>"; };
+		F8FE7D262A86B01600D3E5CE /* DoorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsTableViewController.swift; sourceTree = "<group>"; };
+		F8FE7D282A86BDA300D3E5CE /* CameraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTableViewCell.swift; sourceTree = "<group>"; };
 		FF3C028C5242F2CEFCF4E868 /* Pods-MyHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHouse.release.xcconfig"; path = "Target Support Files/Pods-MyHouse/Pods-MyHouse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,21 +93,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F818C23A2A8D0BB500CC03D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8782E972A87D6A900CFF201 /* NetworkImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F86E6C072A882A16005C8D8B /* ContainerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F818C23A2A8D0BB500CC03D3 /* View */,
 				F8D72B6D2A8938D8003A7720 /* Model */,
 				F8D72B6E2A8938E0003A7720 /* ViewController */,
 			);
 			path = ContainerViewController;
-			sourceTree = "<group>";
-		};
-		F86E6C0A2A88383A005C8D8B /* BottomSheet */ = {
-			isa = PBXGroup;
-			children = (
-				F8D72B6F2A8938F1003A7720 /* ViewController */,
-			);
-			path = BottomSheet;
 			sourceTree = "<group>";
 		};
 		F87BA1682A878CE200279413 /* CamerasCollectionView */ = {
@@ -143,8 +140,7 @@
 		F8D72B6B2A8938AD003A7720 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F8FE7D282A86BDA300D3E5CE /* CameraCollectionViewCell.swift */,
-				F807AEA42A8AC998000C34B6 /* SectionHeader.swift */,
+				F8FE7D282A86BDA300D3E5CE /* CameraTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,7 +148,7 @@
 		F8D72B6C2A8938B9003A7720 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F8FE7D242A86B00000D3E5CE /* CamerasCollectionViewController.swift */,
+				F8FE7D242A86B00000D3E5CE /* CamerasTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -173,14 +169,6 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		F8D72B6F2A8938F1003A7720 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				F86E6C0B2A883851005C8D8B /* BottomSheetViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		F8D72B702A893900003A7720 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,8 +180,8 @@
 		F8D72B712A893912003A7720 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F88091592A8A667500860DC2 /* DoorCollectionViewCell.swift */,
-				F86E6C0D2A8839CB005C8D8B /* IntercomCollectionViewCell.swift */,
+				F88091592A8A667500860DC2 /* DoorTableViewCell.swift */,
+				F86E6C0D2A8839CB005C8D8B /* IntercomTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,7 +189,7 @@
 		F8D72B722A89391B003A7720 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F8FE7D262A86B01600D3E5CE /* DoorsCollectionViewController.swift */,
+				F8FE7D262A86B01600D3E5CE /* DoorsTableViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -241,7 +229,6 @@
 				F87BA1682A878CE200279413 /* CamerasCollectionView */,
 				F8FE7D212A86A8E000D3E5CE /* DoorsCollectionView */,
 				F8D72B732A893944003A7720 /* DescriptionView */,
-				F86E6C0A2A88383A005C8D8B /* BottomSheet */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -267,7 +254,6 @@
 		F8D72B792A893B5B003A7720 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				F8782E972A87D6A900CFF201 /* NetworkImageView.swift */,
 				F8216CCA2A8AA017003DB83B /* VisibilityImageView.swift */,
 			);
 			path = Extentions;
@@ -443,20 +429,18 @@
 				F8782E982A87D6A900CFF201 /* NetworkImageView.swift in Sources */,
 				F8216CCB2A8AA017003DB83B /* VisibilityImageView.swift in Sources */,
 				F8FE7D022A868C8400D3E5CE /* DescriptionViewController.swift in Sources */,
-				F8FE7D292A86BDA300D3E5CE /* CameraCollectionViewCell.swift in Sources */,
-				F8FE7D252A86B00000D3E5CE /* CamerasCollectionViewController.swift in Sources */,
+				F8FE7D292A86BDA300D3E5CE /* CameraTableViewCell.swift in Sources */,
+				F8FE7D252A86B00000D3E5CE /* CamerasTableViewController.swift in Sources */,
 				F8FE7CFE2A868C8400D3E5CE /* AppDelegate.swift in Sources */,
 				F8FE7D182A86943D00D3E5CE /* APIURL.swift in Sources */,
-				F807AEA52A8AC998000C34B6 /* SectionHeader.swift in Sources */,
 				F86E6C092A882A4E005C8D8B /* CurrentScreenModel.swift in Sources */,
-				F8FE7D272A86B01600D3E5CE /* DoorsCollectionViewController.swift in Sources */,
+				F8FE7D272A86B01600D3E5CE /* DoorsTableViewController.swift in Sources */,
 				F88091582A8A2EBD00860DC2 /* StorageManager.swift in Sources */,
-				F880915A2A8A667500860DC2 /* DoorCollectionViewCell.swift in Sources */,
+				F880915A2A8A667500860DC2 /* DoorTableViewCell.swift in Sources */,
 				F8FE7D162A86917900D3E5CE /* CameraModel.swift in Sources */,
-				F86E6C0E2A8839CB005C8D8B /* IntercomCollectionViewCell.swift in Sources */,
+				F86E6C0E2A8839CB005C8D8B /* IntercomTableViewCell.swift in Sources */,
 				F8FE7D002A868C8400D3E5CE /* SceneDelegate.swift in Sources */,
 				F8FE7D142A86915B00D3E5CE /* DoorModel.swift in Sources */,
-				F86E6C0C2A883851005C8D8B /* BottomSheetViewController.swift in Sources */,
 				F8FE7D1E2A86975200D3E5CE /* NetworkDataFetcher.swift in Sources */,
 				F8FE7D1A2A86969000D3E5CE /* NetworkService.swift in Sources */,
 				F8FE7D232A86A95800D3E5CE /* ContainerViewController.swift in Sources */,

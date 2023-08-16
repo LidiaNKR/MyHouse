@@ -1,5 +1,5 @@
 //
-//  CameraCollectionViewCell.swift
+//  CameraTableViewCell.swift
 //  MyHouse
 //
 //  Created by Лидия Некрасова on 11.08.2023.
@@ -7,25 +7,25 @@
 
 import UIKit
 
-protocol CameraCollectionViewCellProtocol {
+protocol CameraTableViewCellProtocol {
     ///Конфигурация ячейки коллекции
     /// - Parameters:
     ///   - camera: модель массива камер
     func configure(with camera: Camera)
 }
 
-final class CameraCollectionViewCell: UICollectionViewCell, CameraCollectionViewCellProtocol {
+final class CameraTableViewCell: UITableViewCell, CameraTableViewCellProtocol {
     
     // MARK: - Public properties
     static let identifier = "cameraCell"
     
     // MARK: - IBOutlets
-    @IBOutlet weak var cameraLabel: UILabel!
-    @IBOutlet weak var cameraImageView: NetworkImageView!
-    @IBOutlet weak var favoriteImageView: UIImageView!
-    @IBOutlet weak var recImageView: UIImageView!
-    @IBOutlet weak var guardImageView: UIImageView!
-    
+    @IBOutlet var cameraLabel: UILabel!
+    @IBOutlet var cameraImageView: NetworkImageView!
+    @IBOutlet var favoriteImageView: UIImageView!
+    @IBOutlet var recImageView: UIImageView!
+    @IBOutlet var guardImageView: UIImageView!
+
     // MARK: - Public methods
     func configure(with camera: Camera) {
         layer.cornerRadius = 20

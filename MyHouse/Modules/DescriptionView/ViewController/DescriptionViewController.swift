@@ -7,31 +7,37 @@
 
 import UIKit
 
-protocol DescriptionViewControllerProtocol {
-    var door: Door { get set }
-}
-
-final class DescriptionViewController: UIViewController, DescriptionViewControllerProtocol {
+final class DescriptionViewController: UIViewController {
 
     // MARK: - Public properties
-    var door = Door()
+    var door: Door?
+    private var doorIsLook: Bool = true
     
     // MARK: - IBOutlets
-    @IBOutlet weak var BottomSheetContainer: UIView!
+    @IBOutlet weak var bottomSheetContainer: UIView!
+    @IBOutlet weak var eyeButtom: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var mainImageView: NetworkImageView!
     @IBOutlet weak var lockButton: UIButton!
     
     // MARK: - LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray6
+        navigationItem.title = door?.name
+        navigationItem.setHidesBackButton(true, animated: true)
+        
         lockButton.layer.cornerRadius = 20
-        mainImageView.fetchImage(from: door.snapshot)
-        navigationItem.title = door.name
+        bottomSheetContainer.layer.cornerRadius = 20
+        mainImageView.fetchImage(from: door?.snapshot)
     }
     
     // MARK: - IBActions
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
     @IBAction func openTheDoorButton() {
+        doorIsLook.toggle()
     }
 }
 

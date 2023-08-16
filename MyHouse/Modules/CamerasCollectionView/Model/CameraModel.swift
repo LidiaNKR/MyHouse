@@ -7,16 +7,19 @@
 
 import RealmSwift
 
+///Модель данных
 struct CameraModel: Decodable {
     let success: Bool
     let data: CameraDataModel
 }
 
+///Модель массива комнат и камер
 struct CameraDataModel: Decodable {
     let room: [String]
     let cameras: [Camera]
 }
 
+///Модель камеры
 @objcMembers final class Camera: Object, Decodable {
     dynamic var name: String
     dynamic var snapshot: String

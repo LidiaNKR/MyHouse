@@ -7,25 +7,17 @@
 
 import UIKit
 
-protocol SegueHandler: AnyObject {
-    ///Переход по segue на следующий экран
-    /// - Parameters:
-    ///   - identifier: идентификатор segue
-    ///   - sender: передаваемая модель данных
-    func segueToNext(identifier: String, sender: Any?)
-}
-
-final class ContainerViewController: UIViewController, SegueHandler {
+final class ContainerViewController: UIViewController {
     
     // MARK: - Private properties
     private var currentScreen: CurrentScreenModel?
-
+    
     // MARK: - IBOutlets
     @IBOutlet weak var cameraContainerView: UIView!
     @IBOutlet weak var doorContainerView: UIView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var underLineView: UIView!
-
+    
     // MARK: - LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,19 +75,6 @@ final class ContainerViewController: UIViewController, SegueHandler {
                 }
             )
             currentScreen = .right
-        }
-    }
-    
-    // MARK: - Puplic methods
-    func segueToNext(identifier: String, sender: Any?) {
-        self.performSegue(withIdentifier: identifier, sender: sender)
-    }
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "doorSegue" {
-            guard let collectionVC = segue.destination as? DoorsCollectionViewController else { return }
-            collectionVC.delegate = self
         }
     }
 }

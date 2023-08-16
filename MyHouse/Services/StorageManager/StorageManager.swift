@@ -9,24 +9,49 @@ import RealmSwift
 
 protocol StorageManagerProtocol {
     var realm: Realm { get set }
+    ///Сохранение информации в БД
+    /// - Parameters:
+    ///   - object: объект сохранения
+
     func save(object: Object)
+    ///Удаление информации о камерах из БД
+    /// - Parameters:
+    ///   - object: объект данных камер
+
     func deleteCamera(object: Results<Camera>)
+    
+    ///Удаление информации о дверях из БД
+    ///  - Parameters:
+    ///   - object: объект данных дверей
     func deleteDoor(object: Results<Door>)
-    func edit(camera: Camera)
+    
+    ///Изменение статуса избранного для камеры
+    ///  - Parameters:
+    ///   - camera: модель камеры
+    func editFavoriteCamera(camera: Camera)
+    
+    ///Изменение статуса избранного для двери
+    ///  - Parameters:
+    ///   - door: модель двери
+    func editFavoriteDoor(door: Door)
+    
+    ///Изменение имени двери
+    ///  - Parameters:
+    ///   - door: модель двери
+    ///   - newValue: новое имя двери
+    func editDoorName(door: Door, newValue: String)
 }
 
 final class StorageManager: StorageManagerProtocol {
     var realm = try! Realm()
 
     // MARK: - Work with favorite photos
-    ///Сохранение информации в БД
     func save(object: Object) {
         write {
             realm.add(object)
         }
     }
     
-    ///Удаление информации из БД
     func deleteCamera(object: Results<Camera>) {
         write {
             realm.delete(object)
@@ -39,9 +64,21 @@ final class StorageManager: StorageManagerProtocol {
         }
     }
     
-    func edit(camera: Camera) {
+    func editFavoriteCamera(camera: Camera) {
         write {
             camera.favorites.toggle()
+        }
+    }
+    
+    func editFavoriteDoor(door: Door) {
+        write {
+            door.favorites.toggle()
+        }
+    }
+    
+    func editDoorName(door: Door, newValue: String) {
+        write {
+            door.name = newValue
         }
     }
 
