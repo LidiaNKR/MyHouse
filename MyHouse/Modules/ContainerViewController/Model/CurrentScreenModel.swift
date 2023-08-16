@@ -7,6 +7,7 @@
 
 import Foundation
 
+///Варианты текущего экрана в контрейнере: левый/правый
 enum CurrentScreenModel {
     case left
     case right

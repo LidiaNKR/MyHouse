@@ -7,11 +7,13 @@
 
 import RealmSwift
 
+///Модель доступа и массива дверей
 struct DoorModel: Decodable {
     let success: Bool
     let data: [Door]
 }
 
+///Модель двери
 @objcMembers final class Door: Object, Decodable {
     dynamic var name: String
     dynamic var room: String?

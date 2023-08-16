@@ -7,7 +7,16 @@
 
 import UIKit
 
-final class NetworkImageView: UIImageView {
+protocol NetworkImageViewProtocol {
+    /// Установка каринки.
+    /// Проверяем есть ли изображение в кеше.
+    /// Если нет, грузим из сети по ссылке и сохраняем в кеш.
+    /// - Parameters:
+    ///   - url: ссылка на картинку
+    func fetchImage(from url: String?)
+}
+
+final class NetworkImageView: UIImageView, NetworkImageViewProtocol {
     
     // MARK: - Public properties
     private let activityIndicator = UIActivityIndicatorView(style: .medium)
@@ -43,7 +52,7 @@ final class NetworkImageView: UIImageView {
     }
     
     // MARK: - Private methods
-    ///Настройка с activityIndicator
+    ///Настройка activityIndicator
     private func activityIndicator(_ isHidden: Bool) {
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         addSubview(activityIndicator)
